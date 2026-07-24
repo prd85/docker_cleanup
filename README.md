@@ -4,11 +4,11 @@ This repository contains a helper script that creates an executable cleanup.sh s
 
 **cleanup.sh** – Stops and removes Docker containers, images, volumes, and custom networks.
 
-##Prerequisites
+**Prerequisites:**
 
-  Linux or macOS
-  Docker installed
-  User with sudo privileges
+* Linux or macOS
+* Docker installed
+* User with sudo privileges
 
 ## Installation
 
@@ -69,7 +69,7 @@ echo "cleanup.sh has been created and made executable."
 
 ⚠️ This script permanently removes Docker resources.
 
-Running `./cleanup.sh` - will delete:
+Running **./cleanup.sh** will delete:
 
 All containers
 All Docker images
