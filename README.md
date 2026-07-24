@@ -1,4 +1,4 @@
-# Docker Cleanup Script
+# Docker Cleanup
 
 This repository contains a helper script that creates an executable cleanup.sh script for cleaning up Docker resources.
 
