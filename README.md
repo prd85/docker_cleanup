@@ -45,19 +45,19 @@ cat > cleanup.sh <<'EOF'
 #!/bin/bash
 
 # Stop all running containers
-sudo docker stop $(sudo docker ps -aq) 2>/dev/null
+sudo docker stop $(sudo docker ps -aq)
 
 # Remove all containers
-sudo docker rm $(sudo docker ps -aq) 2>/dev/null
+sudo docker rm $(sudo docker ps -aq)
 
 # Remove all images
-sudo docker rmi $(sudo docker images -q) 2>/dev/null
+sudo docker rmi $(sudo docker images -q)
 
 # Remove all volumes
-sudo docker volume rm $(sudo docker volume ls -q) 2>/dev/null
+sudo docker volume rm $(sudo docker volume ls -q)
 
-# Remove all unused custom networks (excluding default networks)
-sudo docker network rm $(sudo docker network ls -q --filter type=custom) 2>/dev/null
+# Remove all unused network
+sudo docker network rm $(sudo network ls -q)
 EOF
 
 chmod +x cleanup.sh
