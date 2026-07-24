@@ -2,8 +2,7 @@
 
 This repository contains a helper script that creates an executable cleanup.sh script for cleaning up Docker resources.
 
-## Files
-    `cleanup.sh` – Stops and removes Docker containers, images, volumes, and custom networks.
+**cleanup.sh** – Stops and removes Docker containers, images, volumes, and custom networks.
 
 ##Prerequisites
 
